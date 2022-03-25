@@ -1,7 +1,7 @@
 <h1 align="center"> TUI TTS中文语音合成测试用例 </h1>
 
 ## 描述
-TUI *V2.1* 以上版本支持`TTS`中文语音合成。<br>
+TUI *V2.1* 以上版本支持`TTS`中文语音合成，TTS算法只占用ROM空间2.75MB， RAM空间46.6KB。<br>
 `TUISYS/tts_demo`仓库提供了gb2312编码转换语音的demo，实际应用要结合`TUISYS/tui_project`仓库里面的tui库文件，在tui内核初始化完成后调用。<br>
 直接在应用里面调用sound控件的函数`int tui_sound_set_sound_src_one_hz(tui_obj_t *sound, const char *gb2312_one_zh);`。
 
