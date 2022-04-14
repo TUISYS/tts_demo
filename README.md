@@ -35,7 +35,7 @@ static void tui_tts_sound_cb(tui_obj_t *obj, tui_event_e event)
 
 void tui_tts_speak_test(void)
 {
-	tui_sound_attri_t attri = { 0 };
+	tui_sound_attri_t attri = { 0 };//注意先清空结构体，避免随机值
 	tui_obj_t * sound;
 
 	/* 创建对象 */
